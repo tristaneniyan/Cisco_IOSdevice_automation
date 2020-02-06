@@ -15,11 +15,4 @@ try:
 except NetmikoAuthenticationException:
    print("Incorrect credentials")
 
-  prompt = ch.find_prompt()
-  print (prompt)
-  if (prompt == "R1#"):
-    print ("connection made")
-    result = ch.send_command( "sh ip int br")
-    print (result)
-  else:
-    print ("error")
+print("Connection established")
